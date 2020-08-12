@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of legends</title>
+    <link href="https://fonts.googleapis.com/css?family=Sahitya&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lol3.jpg" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">League  of  Legends</a>
+        <div class="menu-toggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="game.html" title="Jeu"> Jeu</a></li>
+                <li><a href="slide.html" title="Personnage"> Personnage</a></li>
+                <li><a href="personnage.html" title="Quiz"> Quiz</a></li>
+                <li><a href="download.html" title="Télécharger"> Télécharger</a></li>
+                <li><a href="login1.html" title="Login"> Login</a></li>
+                <li><a href="senna.html" title="Senna">Senna</a></li>
+
+            </ul>
+
+
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>

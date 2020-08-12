@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/lol3.jpg" />
+    <link rel="stylesheet" href="senna.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sahitya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/812bbefdb8.js" crossorigin="anonymous"></script>
+    <script src="senna.js"></script>
+    <title>Senna</title>
+</head>
+<script>
+    function playPause(btn, vid) {
+
+        var vid = document.getElementById(vid);
+        if (vid.paused) {
+            vid.play();
+            btn.innerHTML = "Pause";
+
+
+        } else {
+            vid.pause();
+            btn.innerHTML = "Play";
+
+        }
+
+
+
+    }
+</script>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">League  of  Legends</a>
+        <div class="menu-toggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="game.html" title="Jeu"> Jeu</a></li>
+                <li><a href="slide.html" title="Personnage"> Personnage</a></li>
+                <li><a href="personnage.html" title="Quiz"> Quiz</a></li>
+                <li><a href="download.html" title="Télécharger"> Télécharger</a></li>
+                <li><a href="login1.html" title="Login"> Login</a></li>
+                <li><a href="senna.html" title="Senna">Senna</a></li>
+
+            </ul>
+
+
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <div class="ht">
+    <h1>L'histoire de Senna </h1>
+</div>
+   <div class="container">
+       <div class="c_video">
+           <video class="video" src="Senna_ Shadow’s Embrace _ Champion Animated Trailer - League of Legends.mp4" type="video/mp4" controls></video>
+       </div>
+   </div>
+   <div class="ht">
+   <p> Condamnée des l'enfance à être hantée par la mystérieuse Brume noire, Senna rejoignit un ordre sacré connu sous le nom des Sentinelles de la lumière. Elle combattit vaillamment, avant de périr sous les coups du cruel spectre Thresh et de voir son âme emprisonnée dans sa lanterne. Refusant de perdre espoir, Senna apprit à utiliser la Brume à l'intérieur de la lanterne et revint à la vie, changée à jamais. Brandissant désormais la puissance des ténèbres comme de la lumière, Senna cherche à mettre fin à la Brume noire en la retournant contre elle-même, chaque tir de son arme permettant de libérer les âmes qui y sont perdues.</p>
+   <h2>Compétences</h2>
+   <h3>Absolution</h3>
+   <p>Lorsque des unités meurent près de Senna, leurs âmes sont parfois prises au piège dans la Brume noire. Senna peut attaquer ces âmes pour les libérer et absorber la Brume qui les retenait. La Brume renforce son canon en pierre-relique en augmentant ses dégâts d'attaque, sa portée d'attaque et ses chances de coup critique.
+
+        Les attaques du canon en pierre-relique de Senna tirent plus lentement, infligent des dégâts supplémentaires et lui confèrent brièvement une partie de la vitesse de déplacement de sa cible.</p>
+
+        <h3>Ombre perforante</h3>
+        <p>Le canon en pierre-relique de Senna tire un rayon de lumière et d'ombre à travers sa cible. Ce rayon soigne les alliés et blesse les ennemis.
+
+                Senna tire un rayon d'ombre perforante à travers un allié ou un ennemi. Les ennemis subissent {{ totaldamage }} pts de dégâts physiques. Les champions alliés touchés récupèrent {{ totalheal }} PV. Les attaques de base réduisent le délai de récupération d'Ombre perforante de {{ cdreductiononhit }} sec.</p>
+                <h3>Dernière étreinte</h3>
+           <p>Senna projette une vague de Brume noire. Si elle touche un ennemi, la Brume s'accroche à lui. La cible ainsi que tous les ennemis proches sont immobilisés après un court délai.
+
+                Senna projette une vague de Brume noire qui inflige {{ damage }} pts de dégâts physiques au premier ennemi touché. Après {{ delaytime }} sec, la cible et tous les ennemis proches sont immobilisés pendant {{ rootduration }} sec.</p>
+           
+           
+                <h3>Malédiction de la Brume noire</h3>
+        <p>Senna relâche la Brume accumulée dans son arme pour créer une tempête autour d'elle, ce qui la transforme en spectre. Les alliés qui entrent dans cette zone sont camouflés et prennent l'apparence d'un spectre. Les spectres ne peuvent pas être identifiés, ne peuvent pas être sélectionnés et profitent d'un bonus en vitesse de déplacement.
+
+                Senna se transforme en nuage de Brume pendant {{ buffduration }} sec et devient un spectre. Les champions alliés qui entrent dans la Brume sont camouflés et se transforment en spectre lorsqu'ils en sortent. Les spectres ont une vitesse de déplacement augmentée de {{ totalms }}. Ils ne peuvent pas être sélectionnés ou identifiés tant qu'aucun champion ennemi n'est proche.</p>
+            
+            <h3>Ténèbres aveuglantes</h3>
+            <p>Senna invoque les pierres-reliques de Sentinelles déchues, ouvrant son canon en pierre-relique pour former un éventail sacré d'ombre et de lumière. Elle tire alors un rayon à portée illimitée qui octroie un bouclier aux alliés touchés et inflige des dégâts aux ennemis pris dans son centre.
+
+                    Senna tire un rayon de lumière à portée illimitée. Les champions ennemis touchés subissent {{ totaldamage }} pts de dégâts physiques. Les champions alliés touchés dans une plus grande zone reçoivent un bouclier pouvant absorber {{ totalshield }} pts de dégâts pendant {{ shieldduration }} sec. Les PV du bouclier augmentent avec la quantité de Brume récupérée par Senna.</p>
+
+            </div>
+              <div class="myvideo">
+                  <div class="myvideop">
+                        <video class="video" src="senne.mp4" type="video/mp4"controls ></video>
+                    </div>
+                </div>
+</body>
+
+</html>

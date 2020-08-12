@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="download.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sahitya&display=swap" rel="stylesheet">
+
+
+    <title>Télécharger</title>
+    <link rel="icon" type="image/png" href="img/lol3.jpg" />
+    <script>
+        var texte = "Vous avez téléchargé League of Legends !";
+        function cascade() {
+
+
+            alert(texte);
+            texte = "Vous avez téléchargé League of Legends !";
+            document.body.style.backgroundColor = " #ffe699";
+
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html" class="logo">League  of  Legends</a>
+        <div class="menu-toggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="game.html" title="Jeu"> Jeu</a></li>
+                <li><a href="slide.html" title="Personnage"> Personnage</a></li>
+                <li><a href="personnage.html" title="Quiz"> Quiz</a></li>
+                <li><a href="download.html " title="Télécharger">Télécharger</a></li>
+                <li><a href="login1.html" title="Login"> Login</a></li>
+               
+                <li><a href="senna.html" title="Senna">Senna</a></li>
+
+            </ul>
+
+
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <input class="btn" type="button" onclick="cascade()" name="" value=" Télécharger ">
+
+
+    </script>
+
+
+</body>
+
+</html>

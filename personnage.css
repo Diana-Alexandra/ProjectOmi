@@ -1,0 +1,189 @@
+
+
+body {
+    font-family: 'Sahitya', serif;
+    background-image: url(img/login.jpg);
+    background-size: cover ;
+   background-attachment: fixed;
+}
+#after_submit {
+    visibility: hidden;
+    background:#a2c0f0;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 20px;
+    font-size: 30px;
+   
+}
+#quiz {
+    margin-left: 10px;
+    background: #a2c0f0;
+    padding: 10px 20px 10px 20px;
+    width : 400px;
+    border-radius: 20px;
+    float: left;
+    
+}   
+input {
+    margin-bottom: 5px;
+    font-size: large;
+    
+}
+#textbox {
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+.button {
+    background: rgb(223, 122, 122);
+    border-radius: 10px;
+    padding: 10px;
+    color : rgb(230, 61, 179);
+    font-size: 25px;
+    transition-duration: .5s;
+    margin-top: 15px;
+
+}
+#button:hover {
+    background: rgb(54, 26, 180);
+    border: 1px solid rgb(223, 122, 122) ;
+    color : black ;
+    cursor: pointer;
+}
+#picture {
+    width: 375px;
+    height: 245;
+}
+img {
+    width: 300px;
+    height: 250px;
+}
+h1 {
+    color: rgb(90, 164, 224);
+    text-align: center;
+    
+}
+p {
+    font-size: 20px;
+}
+header 
+{
+    position: relative;
+    max-width: 1200px;
+    height: 65px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(132, 211, 224, 0.548);
+}
+.logo
+{
+    color: #5cd5da;
+    height: 60px;
+    font-size:36px ;
+    line-height: 60px;
+    padding : 0 20px ;
+     text-align: center;
+    box-sizing:border-box ;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+nav {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:rgb(163, 230, 241);
+
+}
+nav ul li a.active,
+ nav ul li a:hover {
+    background: black;
+    opacity: 0.5;
+    color: rgb(144, 227, 233);
+    transition: 0.5s;
+
+}
+@media (max-width:1200px)
+{
+    header
+    {
+        margin: 20px;
+
+
+    }
+}
+@media (max-width:768px)
+{
+    .menu-toggle{
+        display: block;
+      
+        width:40px ;
+        height: 40px;
+        margin: 10px;
+        background: none;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #069370;
+
+    }  
+        
+        
+        
+    
+    .menu-toggle:before 
+    {
+        content: '\f0c9' ;
+        font-family: fontAwesome;
+        line-height: 40px;
+        float: right;
+
+    }
+    .menu-toggle.active:before 
+    {
+        content: '\f057' ;
+        
+
+    }
+    nav {
+      display: none;  
+    }
+    nav.active {
+        display: block; 
+        width: 100%;
+
+      }
+      nav.active ul {
+          display: block;
+      }
+      nav.active ul li a {
+        margin:0;
+
+    }
+}
+

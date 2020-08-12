@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sahitya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://kit.fontawesome.com/812bbefdb8.js" crossorigin="anonymous"></script>
+
+    <title>Personnages </title>
+    <link rel="icon" type="image/png" href="img/lol3.jpg" />
+</head>
+
+
+
+<body>
+    <header>
+        <a href="index.html" class="logo">League  of  Legends</a>
+        <div class="menu-toggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="game.html" title="Jeu"> Jeu</a></li>
+                <li><a href="slide.html" title="Personnages">Personnages</a></li>
+                <li><a href="personnage.html" title="Quiz"> Quiz</a></li>
+                <li><a href="download.html" title="Télécharger"> Télécharger</a></li>
+                <li><a href="login1.html" title="Login"> Login</a></li>
+                <li><a href="senna.html" title="Senna">Senna</a></li>
+
+            </ul>
+
+
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
+    <div class="carousel-container">
+        <i class="fa fa-arrow-circle-o-right" aria-hidden="true" id="nextBtn"></i>
+        <i class="fa fa-arrow-circle-o-left" aria-hidden="true" id="prevBtn"></i>
+        <div class="carousel-slide">
+            <img src="img/top2.jpeg" id="lastClone" alt=>
+            <img src="img/supp1.jpeg" alt=>
+            <img src="img/adc1.jpeg" alt=>
+            <img src="img/mid1.jpeg" alt=>
+            <img src="img/jng2.jpeg" alt=>
+            <img src="img/supp2.jpeg" alt=>
+            <img src="img/adc2.jpeg" alt=>
+            <img src="img/top2.jpeg" alt=>
+            <img src="img/jng1.jpeg" id="firstClone" alt=>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
